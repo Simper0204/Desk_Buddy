@@ -108,7 +108,8 @@ void setup() {
 
   pinMode(LDR_D0, INPUT);
   pinMode(BUTTON, INPUT_PULLUP);
-
+  pinMode(BUZZ_A, OUTPUT);
+  
   randomSeed(analogRead(A0));
   nextRandomSongTime = millis() + random(5000, 20001);
 }
